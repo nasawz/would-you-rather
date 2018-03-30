@@ -1,0 +1,16 @@
+.storybook
+coverage
+example_data
+node_modules
+src
+test
+tools
+npm-debug.log
+Dockerfile*
+docker-compose*
+.dockerignore
+.git
+.gitignore
+README.md
+LICENSE
+.vscode
