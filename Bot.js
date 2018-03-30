@@ -15,7 +15,7 @@ class Bot extends BaseBot {
     this.addLaunchHandler(() => {
       this.waitAnswer()
       return {
-        outputSpeech: '开始游戏请说：开始',
+        outputSpeech: '欢迎来到你选哪个。开始游戏请说：开始',
         reprompt: '开始游戏请说：开始'
       };
     });
@@ -50,6 +50,7 @@ class Bot extends BaseBot {
         choiceDb
           .update({ _id: doc._id }, { $set: { num_a: num_a, num_b: num_b } }, { returnUpdatedDocs: true }, (err, numAffected, affectedDocuments) => (err ? console.log(err) : console.log(affectedDocuments)))
         this.endSession()
+        this.clearSessionAttribute()
         return {
           outputSpeech: `共有${percent}%的人和你一样选择了${choise},你是${corps}。`
         }
