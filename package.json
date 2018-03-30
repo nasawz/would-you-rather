@@ -1,18 +1,23 @@
 {
   "name": "would-you-rather",
   "version": "1.0.0",
-  "description": "",
+  "description": "你宁愿选哪个？",
   "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
   "dependencies": {
+    "lodash": "^4.17.5",
     "bot-sdk": "^1.1.1",
     "express": "^4.16.2",
-    "lodash": "^4.17.5",
     "nedb": "^1.8.0"
-  }
+  },
+  "devDependencies": {},
+  "scripts": {},
+  "repository": {
+    "type": "git",
+    "url": "http://git.klz-qcloud.cn/nasa.wang/would-you-rather.git"
+  },
+  "keywords": [
+    "bueros"
+  ],
+  "author": "nasa.wang",
+  "license": "ISC"
 }
