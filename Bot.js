@@ -1,11 +1,11 @@
 var BaseBot = require('bot-sdk');
 var Datastore = require('nedb');
 var _ = require('lodash');
-var choiceDb = new Datastore({ filename: 'db/choice.db', autoload: true });
+// var choiceDb = new Datastore({ filename: 'db/choice.db', autoload: true });
 
 
 class Bot extends BaseBot {
-  constructor(postData) {
+  constructor(postData, choiceDb) {
     super(postData);
     console.log(postData.context.System.user);
     console.log(postData.context.System.user.userInfo);
